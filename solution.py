@@ -86,7 +86,7 @@ def get_route(hostname):
                 timeLeft = timeLeft - howLongInSelect
                 if timeLeft <= 0:
                     #Fill in start
-                    #append response to your dataframe including hop #, try #, and "Timeout" responses as required by the acceptance criteria
+                    #append response to your dataframe including hop #, try #, and "timeout" responses as required by the acceptance criteria
                     #print (df)
                     #Fill in end
             except Exception as e:
@@ -97,10 +97,10 @@ def get_route(hostname):
                 #Fill in start
                 #Fetch the icmp type from the IP packet
                 #Fill in end
-                try: #try to fetch the hostname
+                try: #try to fetch the hostname of the router that returned the packet - note don't confuse with the hostname that your are tracing
                     #Fill in start
                     #Fill in end
-                except herror:   #if the host does not provide a hostname
+                except herror:   #if the router host does not provide a hostname use "Hostname not found"
                     #Fill in start
                     #Fill in end
 
