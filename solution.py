@@ -78,7 +78,7 @@ def get_route(hostname):
                 howLongInSelect = (time.time() - startedSelect)
                 if whatReady[0] == []: # Timeout
                     #Fill in start
-                    #append response to your dataframe including hop #, try #, and "Timeout" responses as required by the acceptance criteria
+                    #append response to your dataframe including hop #, try #, and "timeout" responses as required by the acceptance criteria
                     #print (df)
                     #Fill in end
                 recvPacket, addr = mySocket.recvfrom(1024)
