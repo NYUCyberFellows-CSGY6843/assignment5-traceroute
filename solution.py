@@ -97,7 +97,7 @@ def get_route(hostname):
                 #Fill in start
                 #Fetch the icmp type from the IP packet
                 #Fill in end
-                try: #try to fetch the hostname of the router that returned the packet - note don't confuse with the hostname that your are tracing
+                try: #try to fetch the hostname of the router that returned the packet - don't confuse with the hostname that you are tracing
                     #Fill in start
                     #Fill in end
                 except herror:   #if the router host does not provide a hostname use "Hostname not found"
