@@ -100,7 +100,7 @@ def get_route(hostname):
                 try: #try to fetch the hostname of the router that returned the packet - don't confuse with the hostname that you are tracing
                     #Fill in start
                     #Fill in end
-                except herror:   #if the router host does not provide a hostname use "Hostname not found"
+                except herror:   #if the router host does not provide a hostname use "hostname not returnable"
                     #Fill in start
                     #Fill in end
 
