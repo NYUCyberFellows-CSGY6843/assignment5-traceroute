@@ -8,7 +8,7 @@ import binascii
 import pandas as pd
 
 ICMP_ECHO_REQUEST = 8
-MAX_HOPS = 30
+MAX_HOPS = 60
 TIMEOUT = 2.0
 TRIES = 1
 # The packet that we shall send to each router along the path is the ICMP echo
@@ -123,6 +123,7 @@ def get_route(hostname):
                     #Fill in start
                     #You should update your dataframe with the required column field responses here
                     #Fill in end
+                    return df
                 else:
                     #Fill in start
                     #If there is an exception/error to your if statements, you should append that to your df here
