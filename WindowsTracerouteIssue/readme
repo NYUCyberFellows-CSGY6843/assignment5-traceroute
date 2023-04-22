@@ -1,0 +1,2 @@
+For anyone experience issues running their traceroute.py program on Windows 10 and 11, specifically getting timeout printed for all intermediary routers, your solution is here at last! It appears that a new Windows update is blocking some of the ICMP traffic required for the lab to be tested locally.
+Provided is a script and instructions, on how to execute, in order to fix this issue so you can better test your programs locally!
