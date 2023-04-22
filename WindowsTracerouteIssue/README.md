@@ -7,3 +7,5 @@
 4. Finally use the next command to execute the script:
 `./traceroute.ps1`
 5. This should create the required firewall rules to allow your python traceroute program to receive all the ICMP packets required for the lab.
+6. Once you are finished with the lab run undo_traceroute.ps1 to remove the firewall rules required for the lab.
+`./undo_traceroute.ps1`
