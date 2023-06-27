@@ -41,11 +41,11 @@ def checksum(string):
 def build_packet():
     #Fill in start
     # In the sendOnePing() method of the ICMP Ping exercise ,firstly the header of our
-    # packet to be sent was made, secondly the checksum was appended to the header and
+    # packet to be sent was made, secondly the checksum was added to the header and
     # then finally the complete packet was sent to the destination.
 
     # Make the header in a similar way to the ping exercise.
-    # Append checksum to the header.
+    # concat checksum to the header.
 
     # Don’t send the packet yet , just return the final packet in this function.
     #Fill in end
@@ -78,7 +78,7 @@ def get_route(hostname):
                 howLongInSelect = (time.time() - startedSelect)
                 if whatReady[0] == []: # Timeout
                     #Fill in start
-                    #append response to your dataframe including hop #, try #, and "timeout" responses as required by the acceptance criteria
+                    #concat response to your dataframe including hop #, try #, and "timeout" responses as required by the acceptance criteria
                     #print (df)
                     #Fill in end
                 recvPacket, addr = mySocket.recvfrom(1024)
@@ -86,7 +86,7 @@ def get_route(hostname):
                 timeLeft = timeLeft - howLongInSelect
                 if timeLeft <= 0:
                     #Fill in start
-                    #append response to your dataframe including hop #, try #, and "timeout" responses as required by the acceptance criteria
+                    #concat response to your dataframe including hop #, try #, and "timeout" responses as required by the acceptance criteria
                     #print (df)
                     #Fill in end
             except Exception as e:
